@@ -1,0 +1,14 @@
+# Intellij
+/.idea/
+
+# Poetry
+pyproject.toml
+poetry.lock
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Other
+README.md
+tests/

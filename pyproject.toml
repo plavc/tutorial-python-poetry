@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "gptool"
+version = "0.1.0"
+description = ""
+authors = ["Gregor Plavčak <plavc@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "gptool", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+boto3 = "^1.26.135"
+oracledb = "^1.3.1"
+pyaml = "^23.5.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pylint = "^2.17.4"
+pyflakes = "^3.0.1"
+pycodestyle = "^2.10.0"
+bandit = "^1.7.5"
+radon = "^6.0.1"
+black = "^23.3.0"
+testcontainers = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
