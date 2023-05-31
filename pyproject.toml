@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "gptool"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Gregor Plavčak <plavc@users.noreply.github.com>"]
 readme = "README.md"
 packages = [{include = "gptool", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 typer = "^0.9.0"
 boto3 = "^1.26.135"
 oracledb = "^1.3.1"
@@ -23,6 +23,19 @@ bandit = "^1.7.5"
 radon = "^6.0.1"
 black = "^23.3.0"
 testcontainers = "^3.7.1"
+mkdocs = "^1.4.3"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+mkdocs-material = "^9.1.15"
+poetry-setup = "^0.3.6"
+commitizen = "^3.2.2"
+
+[tool.poetry.scripts]
+gptool = "gptool.main:run"
+
+[tool.commitizen]
+version = "0.2.0"
+update_changelog_on_bump = true
+version_files = ["src/gptool/__version__.py"]
 
 [build-system]
 requires = ["poetry-core"]

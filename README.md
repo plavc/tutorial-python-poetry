@@ -19,3 +19,5 @@ poetry export -f requirements.txt --output requirements.txt
 ```shell
 poetry run pytest
 ```
+
+https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
