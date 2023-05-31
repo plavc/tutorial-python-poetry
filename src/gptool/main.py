@@ -1,7 +1,6 @@
 """Gp tools main module"""
 import typer
 
-from __init__ import __version__
 
 app = typer.Typer()
 
@@ -19,7 +18,7 @@ def main(name: str):
 
 @app.command()
 def version():
-    typer.echo(__version__)
+    typer.echo("0.0.0")
 
 
 def run():
