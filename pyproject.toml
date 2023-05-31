@@ -34,8 +34,10 @@ gptool = "gptool.main:run"
 
 [tool.commitizen]
 version = "0.2.0"
-update_changelog_on_bump = true
+update_changelog_on_bump = "false"
 version_files = ["src/gptool/__version__.py"]
+annotated_tag = "false"
+version_type = "semver"
 
 [build-system]
 requires = ["poetry-core"]
